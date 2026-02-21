@@ -1,3 +1,24 @@
 /* TODO: Style the product card container */
 
 /* TODO: Add special styling for out-of-stock products */
+.card {
+  background: linear-gradient(145deg, #1e1b2e, #111018);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  border-radius: 16px;
+  transition: transform 180ms ease, box-shadow 180ms ease, border 180ms ease;
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.55);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 44px rgba(212, 175, 55, 0.18);
+  border: 1px solid rgba(212, 175, 55, 0.38);
+}
+
+.outOfStock {
+  opacity: 0.55;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+}
+:global(.outOfStockClass){
+    opacity: 0.6;
+}
